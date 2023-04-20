@@ -1,0 +1,139 @@
+/*Corpo da tela de login*/
+body {
+    transition: 2.0s;
+    margin: 0;
+    padding: 0;
+    background-image: url(../static/img/segundatela.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    font-family: "Comfortaa", sans-serif;
+    -webkit-text-size-adjust: auto;
+}
+
+/*style Div da tela de Cadastro*/
+.cadastro-on {
+    transition: 2.0s;
+    width: 420px;
+    height: 420px;
+    border: 2px solid #000;
+    border-radius: 80px 0px 80px 0px;
+    color: #fff;
+    background-color: rgba(0,0,5,0.8);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 52px 28px;
+}
+
+.cadastro-on h1 {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.cadastro-on p {
+    margin: 0;
+    padding: 3px;
+    font-weight: bold;
+}
+
+.cadastro-on a{
+    margin: 0;
+    padding: 3px;
+    font-size: 9px;
+}
+
+/*Tamanho das caixas Cadastro */
+.cadastro-on input[type="text"], input[type="password"], input[type="email"] {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 23px;
+    border-radius: 14px 14px 14px 14px;
+    margin-top: 5px;
+    text-align: unset;
+}
+
+/*style dropdown da tela cadastrar "selecionar"*/
+.cadastro-on select {
+    width: 72%;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: initial;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: gray;
+    margin-top: 12px;
+}
+
+/*cor da caixa do dropdown mesma cor do login*/
+.cadastro option {
+    background-color: rgba(0,0,5,0.8);
+    border-radius: 80px;
+}
+
+/*style "SELECIONE..." do dropdown*/
+select:invalid {
+    color: gray;
+}
+
+/*style eye-black- olho de visualização de senha 1*/
+.cadastro-on img[id="eye-black-open-1"], img[id="eye-black-closed-1"] {
+    position: absolute;
+    top: 243px;
+    width: 18px;
+    right: 40px;
+    left: 358px;
+    cursor: pointer;
+    border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+/*Reajuste da tela versão mobile*/
+body {
+    -webkit-text-size-adjust: 100%;
+}
+
+/*Tela para tablete - body */
+@media only screen and (max-width: 950px) {
+    .body {
+        width: 85%;
+    }
+}
+
+/*Tela para tablete - img */ 
+@media only screen and (max-width: 950px) {
+    .img {
+        width: 85%;
+    }
+}
+
+/*Tela parar smartohone - img */
+@media only screen and (max-width: 600px) {
+    .body {
+        width: 45%;
+    }
+}
+
+/*Tela parar smartohone - body link*/
+@media only screen and (max-width: 600px) {
+    .img {
+        width: 45%;
+    }
+}

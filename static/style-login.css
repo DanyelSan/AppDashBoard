@@ -1,0 +1,191 @@
+/*Corpo da tela de login*/
+body {
+    transition: 2.0s;
+    margin: 0;
+    padding: 0;
+    background-image: url(../static/img/segundatela.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    font-family: "Comfortaa", sans-serif;
+    -webkit-text-size-adjust: auto;
+}
+
+/*style Div da tela de login*/
+.login {
+    transition: 2.0s;
+    width: 320px;
+    height: 410px;
+    border: 2px solid #000;
+    border-radius: 80px 0px 80px 0px;
+    color: #fff;
+    background-color: rgba(0,0,5,0.8);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 68px 28px;
+}
+
+/*controle do logo-embalar-login*/
+.img-logo {
+    border-radius: 80%;
+    position: absolute;
+    top: -50px;
+    left: 59px;
+    margin-left: 60px;
+}
+
+/*Titulo "LOGIN" da tela de login*/
+.login h1 {
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+/*Texto Usuario dentro da caixa de input da login*/
+.login p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+/*Tamanho das caixas login*/
+.login input {
+    width: 100%;
+    margin-bottom: 21px;
+}
+
+/*styler da caixa do input password*/
+.login input[type="text"], input[type="password"], input[type="email"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    background-origin: border-box white;
+}
+
+/*styler bottom "login" da tela de login*/
+.login input[type="submit"] {
+    width: 160px;
+    border: none;
+    outline: none;
+    height: 35px;
+    color: #000;
+    background: #fff;
+    border-radius: 20px;
+    transition: 0.2s;
+    font-size: large;
+    margin-left: 50px;
+}
+
+/*informativos "Esqueceu a Senha" & "Não Possui Cadastro*/
+.login a {
+    text-align: center;
+    color: #4876FF;
+}
+
+
+/*Área do representante*/
+.login div[id="irrepresentante"] {
+    margin-top: 30px;
+    margin-left: 35px;
+}
+.login img[id="repre"] {
+    margin: -2px;
+    margin-top: 10px;
+}
+.login a[id="representante"] {
+    color: #6f7180;
+    text-decoration: none;
+}
+.login div[id="irrepresentante"]:hover {
+    cursor: pointer;
+    color: #4876FF;
+    transition: 0.2s;
+}
+
+/*transisção do bottom "Login"*/
+.login input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ff4d4d;
+    transition: 0.2s;
+}
+
+/*styler "Esqueceu a Senha & Não Possui Cadastro*/
+.login p[class="link-login"] {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4b4b4b;
+    transition: 0.2s;
+}
+
+/*styler "Ainda Não Pussui Usuario?"*/
+.login a:hover {
+    transition: 0.2s;
+    color: #ff4d4d;
+}
+
+/*Olho que mostra senha.*/
+.login img[id="eye-open"], img[id="eye-closed"] {
+    position: absolute;
+    top: 235px;
+    width: 18px;
+    right: 35px;
+    cursor: pointer;
+    border: none;
+}
+
+#cadastro {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/*Reajuste da tela versão mobile*/
+body {
+    -webkit-text-size-adjust: 100%;
+}
+
+/*Tela para tablete*/
+@media only screen and (max-width: 1024px) {
+    .body {
+        width: 85%;
+    }
+    .img {
+        width: 10px;
+    }
+
+    section#irrepresentante a{
+        width: 10%;
+    }
+}
+
+/*Tela parar smartohone*/
+@media only screen and (max-width: 600px) {
+    .body {
+        width: 45%;
+    }
+    .img {
+        width: 10%px
+    }
+
+    section#irrepresentante a{
+        width: 10%;
+    }
+}
+

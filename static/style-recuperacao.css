@@ -1,0 +1,124 @@
+/*Corpo da tela de recuperacao*/
+body {
+    transition: 2.0s;
+    margin: 0;
+    padding: 0;
+    background-image: url(../static/img/segundatela.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    font-family: "Comfortaa", sans-serif;
+    -webkit-text-size-adjust: auto;
+}
+
+/*style Div da tela de recuperacao*/ 
+.recuperacao {
+    transition: 2.0s;
+    width: 330px;
+    height: 300px;
+    border: 2px solid #000;
+    border-radius: 80px 0px 80px 0px;
+    color: #fff;
+    background-color: rgba(0,0,5,0.8);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 68px 28px;
+}
+
+
+/*Titulo "Recuperacao" da tela de recupercao*/
+#recuperacao h1 {
+    margin: 0;
+    margin-left: 8px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*Texto dentro da caixa de input da recuperacao*/
+.recuperacao p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+/*Tamanho das caixas recuperacao*/
+.recuperacao input[type="email"] {
+    margin-top: 10px;
+    width: 100%;
+    height: 23px;
+    margin-bottom: 21px;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    border-bottom: 1px solid white;
+    font-size: 16px;
+    background-origin: white;
+}
+
+/*Tamnhado da bottom recuperacao*/
+.recuperacao input[type="submit"] {
+    width: 50%;
+    height: 30px;
+    border-radius: 14px 14px 14px 14px;
+    margin-bottom: 30px;
+    margin-left: 66px;
+}
+
+.recuperacao a {
+    margin-top: 50px;
+    color: #4876FF;
+}
+
+/*transisção de cor do buttom recuperacao*/
+.recuperacao input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ff4d4d;
+    transition: 0.2s;
+}
+
+/*styler "Volta para login*/
+.recuperacao p[class="link-recuperacao"] {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4b4b4b;
+    transition: 0.2s;
+}
+
+/*styler "Login?"*/
+.recuperacao a:hover {
+    transition: 0.2s;
+    color: #ff4d4d;
+}
+
+/*Reajuste da tela versão mobile*/
+body {
+    -webkit-text-size-adjust: 100%;
+}
+
+/*Tela para tablete*/
+@media only screen and (max-width: 1024px) {
+    .body {
+        width: 85%;
+    }
+}
+
+/*Tela parar smartohone*/
+@media only screen and (max-width: 600px) {
+    .body {
+        width: 45%;
+    }
+}

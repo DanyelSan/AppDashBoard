@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/icon.png')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style-recuperacao.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+    <script src="{{ url_for('static', filename='js/recuperacao.js') }}"></script>
+
+    <title>Recuperação</title>
+
+</head>
+
+<body>
+    <!--Formulario de recuperação de senha-->
+    <section>
+        <div id="recuperacao" class="recuperacao">
+            <form method="" action="">
+                <h1>Recuperação</h1>
+
+                <p>
+                    <label for="recuperacao">Insira Seu E-mail:</label>
+                    <input id="recuperacao-input" name="recuperacao-input" required="required" type="email"
+                        placeholder="Ex. teste@hotmail.com">
+                </p>
+
+                <p>
+                    <input type="submit" name="enviar-recuperacao" value="Enviar" onclick="recuperacao()">
+
+                <p class="link-recuperacao" id="voltar para login">
+                    Voltar Para
+                    <a href="{{ url_for('login') }}" id="irlogin">Login</a>
+                </p>
+
+            </form>
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/recuperacao.js') }}"></script>
+
+
+</html>

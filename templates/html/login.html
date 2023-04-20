@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/icon.png')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style-login.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+
+    <title>Login</title>
+
+</head>
+
+<body>
+    <!--Formulario de login-->
+    <section id="display">
+        <div class="container" href="">
+            <div class="content">
+                <div class="login">
+                    <!--Logo Embalar-->
+                    <img src="../static/img/Logo Embalar Tipografia.png" class="img-logo" width="90" height="90"
+                        alt="logo-embalar">
+                    <h1>Login</h1>
+
+                    <form>
+                        <!--Caixa De E-mail-->
+                        <p>E-mail</p>
+                        <input type="email" id="usuario-login" name="Usuario" placeholder="Insira Seu E-mail">
+                        <p>Senha</p>
+                        <!--Caixa de senha-->
+                        <input id="password-login" class="senha" type="password" name="password-login"
+                            placeholder="Insira Sua Senha" onclick="viewersenha()">
+                        <img src="../static/feather/open-eye.svg" id="eye-open">
+                        <img src="../static/feather/closed-eye.svg" id="eye-closed" style="display: none;">
+                        <!--Botão de LOGAR-->
+                        <input class="nav-item" type="Submit" id="ir-entrar" name="entra" value="Entrar"
+                            href="{{ url_for('Rca') }}">
+                        <!--Encaminhamento Recuperação-->
+                        <p class="link-login" id="irsenha">
+                            Esqueceu a
+                            <a class="nav-bottom" href="{{ url_for('recuperacao') }}" id="irsenha">Senha?</a>
+                        </p>
+                        <!--Encaminhamento Cadastro-->
+                        <p class="link-login" id="ircadastro">
+                            Não Possui
+                            <a class="nav-item" href="{{ url_for('cadastro') }}" id="cadastro">Cadastro?</a>
+                        <div id="irrepresentante">
+                            <p class="link-login" id="area-representante">
+                                <a class="link-representante" href="{{ url_for('Representante') }}" id="representante">
+                                    <img src="/static/feather/repre.svg" class="repre" id="repre" width="25" ,
+                                        height="25">
+                                   Àrea do Representante</a>
+                            </p>
+                        </div>
+                        </p>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

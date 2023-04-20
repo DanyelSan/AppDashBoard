@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/icon.png')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style-cadastro.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+    <script src="{{ url_for('static', filename='js/cadastro.js') }}"></script>
+
+    <title>Cadastro</title>
+
+</head>
+
+<body>
+    <!--Formulario de Cadastro-->
+    <section>
+        <div id="cadastro" class="cadastro">
+            <form method="" action="">
+                <h1>Cadastro</h1>
+
+                <p>
+                    <label for="nome-cad">Nome Completo</label>
+                    <input id="nome-cad" name="nome-cad" required="required" type="text"
+                        placeholder="ex... Felipe Araujo" />
+                </p>
+
+                <p>
+                    <label for="emailcad">E-mail</label>
+                    <input id="emailcad" name="emailcad" class="emailcad" required="required" type="email"
+                        placeholder="ex... teste@hotmail.com">
+                    <!--<p class="email-mesage-erro">Por Favor, Insira Um Email valido</p>-->
+                </p>
+
+                <p>
+                    <label for="senha-cad">Senha</label>
+                    <input id="senha-cad" name="senha-cad" required="required" type="password" placeholder="ex... abc1234"
+                        onclick="viewersenha1()">
+                    <img src="../static/feather/open-eye.svg" id="eye-black-open-1">
+                    <img src="../static/feather/closed-eye.svg" id="eye-black-closed-1" style="display: none;">
+                </p>
+
+                <p>
+                    <label for="senha-cad">Confirme a Senha</label>
+                    <input id="senha-cad-two" name="senha-cad-two" required="required" type="password"
+                        placeholder="ex... acb1234" onclick="viewersenha2()">
+                    <img src="../static/feather/open-eye.svg" id="eye-black-open-2">
+                    <img src="../static/feather/closed-eye.svg" id="eye-black-closed-2" style="display: none;">
+                </p>
+
+                <p>
+                    <label for="rca-cad">RCA</label>
+                    <input id="rca-cad" name="rca-cad" required="required" type="number" placeholder="ex... 75">
+                </p>
+
+                <!--<p>
+                    <label for="rca-cad">Matrícula - ERP</label>
+                    <input id="rca-cad" name="rca-cad" required="required" type="number" placeholder="ex... 100">
+                </p>-->
+
+                <!--<p>
+                    <label for="rca-cad">Usuário - ERP</label>
+                    <input id="rca-cad" name="rca-cad" required="required" type="text" placeholder="ex. edsonhenrique">
+                </p>-->
+
+                <p>
+                    <label for="matricula-cad">Cargo:</label>
+                    <select name="box-selection" id="box-tipo" class="box-tipo" type="dropdown" required="required">
+                        <option value="" disabled selected >SELECIONE...</option>
+                        <option value="RCA">VENDEDOR</option>
+                        <option value="SUPERVISOR">SUPERVISOR</option>
+                        <option value="ANALISTA">ANALISTA</option>
+                        <option value="GERENTE">GERENTE</option>
+                        <option value="DIRETORIA">DIRETORIA</option>
+                        <!--<option value="REPRESENTANTE">REPRESENTANTE</option>-->
+                    </select>
+                </p>
+
+                <p>
+                    <input type="submit" name="cadastra" value="Cadastrar">
+                </p>
+
+                <p class="link-cadastro" id="ja-possui-cadastro" style="margin-top: 10px;">
+                    Já Possui Cadastro?
+                    <a href="{{ url_for('login') }}" id="irlogin">Ir Para Login</a>
+                </p>
+
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>

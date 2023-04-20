@@ -1,0 +1,314 @@
+/* ------------- *TODO CORPO DO PROJETO DASH PYTHON* --------------- */
+body {  /* CORPO DE TODO PREJETO DASHBOARD */
+    transition: 1s;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 100vh;
+    background: #c1c3d1;
+    font-family: "Fira Code"; font-size: 18px;
+    -webkit-text-size-adjust: auto;
+}
+/*Tela para tablete*/
+@media only screen and (max-width: 1024px) {
+    .btn_sicronização {
+        margin-left: 0%;
+        font-size: -10px;
+    }
+    .iconi_sicronização {
+        margin-left: -1%;
+    }
+    .botton_saida_dash {
+        margin-left: -10px;
+    }
+}
+/*Tela parar smartohone*/
+@media only screen and (max-width: 600px) {
+    .btn_sicronização {
+        margin-left: -15%;
+        font-size: 10;
+    }
+    .iconi_sicronização {
+        margin-left: -17%;
+    }
+    .botton_saida_dash {
+        position: flex;
+        margin-left: -20px;
+    }
+    
+}
+@media only screen and (max-width: 300px) {
+    .btn_sicronização {
+        margin-left: -10%;
+        font-size: 10;
+    }
+    .iconi_sicronização {
+        margin-left: -12%;
+    }
+    .botton_saida_dash {
+        position: flex;
+        margin-left: -20px;
+    }
+}
+/* ---------------------------------------------------------------- */
+
+/* ------------- ANIMAÇÃO DO BOTÃO DE HAMBURGUE MENU DO SIDEBAR ------------- */
+label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 15px;
+    width: 20px;
+}
+label span {
+    position: absolute;
+    display: block;
+    margin-top: 4.5px;
+    height: 2px;
+    width: 100%;
+    border: 1.4px;
+    border-radius: 20px;
+    background: #fff;
+    transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1) {
+    top: 0;
+}
+label span:nth-child(1):hover,
+label span:nth-child(1) .active:focus,
+label span:nth-child(1):hover {
+    background-color: #149ddd;
+    transition: .2s;
+}
+label span:nth-child(2) {
+    top: 5px;
+}
+label span:nth-child(2):hover,
+label span:nth-child(2) .active:focus,
+label span:nth-child(2):hover {
+    background-color: #149ddd;
+    transition: .2s;
+}
+label span:nth-child(3) {
+    top: 10px;
+}
+label span:nth-child(3):hover,
+label span:nth-child(3) .active:focus,
+label span:nth-child(3):hover {
+    background-color: #149ddd;
+    transition: .2s;
+}
+#checkbox-menu:checked + label span:nth-child(1),
+#checkbox-menu:checked + label span:nth-child(1):hover,
+#checkbox-menu:checked + label span:nth-child(1) .active:focus,
+#checkbox-menu:checked + label span:nth-child(1):hover {
+    transform: rotate(-45deg); 
+    top: 7px;
+    margin-top: 3px;
+    background: #ff0000;
+    transition: .2s;
+}
+#checkbox-menu:checked + label span:nth-child(2),
+#checkbox-menu:checked + label span:nth-child(2):hover,
+#checkbox-menu:checked + label span:nth-child(2) .active:focus,
+#checkbox-menu:checked + label span:nth-child(2):hover {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+    transition: 1.2s;
+}
+#checkbox-menu:checked + label span:nth-child(3),
+#checkbox-menu:checked + label span:nth-child(3):hover,
+#checkbox-menu:checked + label span:nth-child(3) .active:focus,
+#checkbox-menu:checked + label span:nth-child(3):hover {
+    transform: rotate(45deg);
+    top: 7px;
+    margin-top: 3px;
+    background: #ff0000;
+    transition: .2s
+}
+/* -------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------- *TRATAMENTO DA TELA LAYOUT DO VENDEDOR* ----------------------------------------------------- */
+#btn_sidebar {  /* BOTÃO DE ABRIR E FECHA MENU LATERAL - SIDEBAR VENDEDOR */
+    display: fixed;
+    padding: 1px;
+    margin: 0;
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: 15px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.btn_saida_login { /* BOTÃO DE SAIR DO DASHBOARD PARA TELA DE LOGIN VENDEDOR */
+    position: absolute;
+    margin: 0;
+    margin-top: 0;
+    top: 0;
+    margin-left: 95%;
+    padding: 1px;
+    color: #fff;
+}
+.btn_saida_login :hover {  /* MUDANÇA DE COR AO PASSAR O MOUSE - VENDEDOR */
+    color: #149ddd;
+    transition: .5s;
+}
+
+.iconi_sicronização { /* ICONE DE SICRONIZAÇÃO DA TELA DASHBOARD VENDEDOR */
+    position: absolute;
+    cursor: pointer;
+    top: 3px;
+    left: 77.4%;
+    padding: 2px;
+    color: #6f7180;
+}
+
+.alerta_sicronização { /* MOSTRUARIO DE SICRONIZAÇÃO DASHBOARD VENDEDOR */
+    position: absolute;
+    cursor: pointer;
+    margin: 2px;
+    top: 4.4px;
+    margin-left: 75.8%;
+    font-size: 14px;
+    padding: 2px;
+    color: #6f7180;
+}
+
+#btn_avatar { /* TRATAMENTO DO MODAL DA FOTO DO PERFIL */
+    background: transparent;
+    border-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------- *Mudança de Cor Hipertexto dos Icones* ---------------------------- */
+.name_icon_performance :hover{ /* ALTERAÇÃO DE COR DO NOME PERFORMANCE */
+    transition: .5s;
+    color: #149ddd;
+}
+.name_icon_premissas :hover{ /* ALTERAÇÃO DE COR DO NOME PREMISSAS */
+    transition: .5s;
+    color: #149ddd;
+}
+.name_icon_fee :hover{ /* ALTERAÇÃO DE COR DO NOME FEE */
+    transition: .5s;
+    color: #149ddd;
+}
+.name_icon_campanha :hover{ /* ALTERAÇÃO DE COR DO NOME CAMPANHA */
+    transition: .5s;
+    color: #149ddd;
+}
+.name_icon_ranking :hover{ /* ALTERAÇÃO DE COR DO NOME RANKING */
+    transition: .5s;
+    color: #149ddd;
+}
+.name_icon_base :hover{ /* ALTERAÇÃO DE COR DO NOME BASE */
+    transition: .5s;
+    color: #149ddd;
+}
+.name_icon_comitava :hover { /* ALTERAÇÃO DE COR DO NOME COMITIVA */
+    transition: .5s;
+    color: #149ddd;
+}
+.name_icon_config :hover { /* ALTERAÇÃO DE COR DO NOME CONFIGURAÇÃO */
+    transition: .5s;
+    color: #149ddd;
+}
+.name_icon_perfil :hover { /* ALTERAÇÃO DE COR DO NOME PERFIL */
+    transition: .5s;
+    color: #149ddd;
+}
+.img_perfil_button :hover { /* ALTERAÇÃO DE COR DO FUNDO DA FOTO PERFIL*/
+    transition: .5s;
+    background: #149ddd;
+}
+.foto_modal_perfil_up :hover{  /* ALTERAÇÃO DE COR DO FUNDO DA FOTO PERFIL - MODAL*/
+    transition: .5s;
+    background: #149ddd;
+}
+#btn_avatar_perfil :hover {
+    transition: .5s;
+    background: #149ddd;
+}
+/* -------------------------------------------------------------------------------------------- */
+
+
+/* -----------------  *ANIMAÇÃO DOS ICONES LATERAIS DO SIDEBAR* -------------- */
+.button_icon_perf :hover, 
+.button_icon_perf .active:focus, 
+.button_icon_perf :hover {  /* ALTERAÇÃO DE COR DO ICONE PERFORMANCE */
+    transition: .5s;
+    color: #149ddd
+}
+.button_icon_premissas :hover, 
+.button_icon_premissas .active:focus, 
+.button_icon_premissas :hover {  /* ALTERAÇÃO DE COR DO ICONE PREMISSAS */
+    transition: .5s;
+    color: #149ddd;
+}
+.button_icon_fee :hover, 
+.button_icon_fee .active:focus, 
+.button_icon_fee :hover {  /* ALTERAÇÃO DE COR DO ICONE FEE */
+    transition: .5s;
+    color: #149ddd;
+}
+.button_icon_campanha :hover, 
+.button_icon_campanha .active:focus, 
+.button_icon_campanha :hover { /* ALTERAÇÃO DE COR DO ICONE CAMPANHA */
+    transition: .5s;
+    color: #149ddd;
+}
+.button_icon_ranking :hover, 
+.button_icon_ranking .active:focus, 
+.button_icon_ranking :hover { /* ALTERAÇÃO DE COR DO ICONE RANKING */
+    transition: .5s;
+    color: #149ddd;
+}
+.button_icon_base :hover,
+.button_icon_base .active:focus, 
+.button_icon_base :hover { /* ALTERAÇÃO DE COR DO ICONE BASE */
+    transition: .5s;
+    color: #149ddd;
+}
+.button_icon_comitiva :hover, 
+.button_icon_comitiva .active:focus, 
+.button_icon_comitiva :hover {  /* ALTERAÇÃO DE COR DO ICONE COMITIVA */
+    transition: .5s;
+    color: #149ddd;
+}
+.button_icon_config :hover, 
+.button_icon_config .active:focus, 
+.button_icon_config :hover { /* ALTERAÇÃO DE COR DO ICONE CONFIGURAÇÃO */
+    transition: .5s;
+    color: #149ddd;
+}
+.button_icon_perfil :hover, 
+.button_icon_perfil .active:focus, 
+.button_icon_perfil :hover {  /* ALTERAÇÃO DE COR DO ICONE PERFIL */
+    transition: .5s;
+    color: #149ddd;
+}
+.btn_sicronização :hover, 
+.btn_sicronização .active:focus, 
+.btn_sicronização :hover {  /* ALTERAÇÃO DE COR DO INFORMATIVO DE SICRONIZAÇÃO */
+    transition: .5s;
+    color: #149ddd;
+}
+.nome_perfil :hover,
+.nome_pefil .active:focus,
+.nome_pefil :hover {
+    transition: .5s;
+    text-shadow: 2px 2.5px 1px #149ddd;
+}
+/* ---------------------------------------------------------------------- */
+
+
+/* ------------------------------------------ *FINAL TRATAMENTO DA TELA LAYOUT VENDEDOR* ----------------------------------------------------------------- */
+
+
+/* ----------------------------------- INICIO LAYOUT DA TELA PERFORMANCE - VENDEDOR ------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------------------------------------  */

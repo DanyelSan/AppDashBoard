@@ -1,0 +1,233 @@
+/*Corpo da tela de cadastro*/
+body {
+    transition: 2.0s;
+    margin: 0;
+    padding: 0;
+    background-image: url(../static/img/segundatela.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    font-family: "Comfortaa", sans-serif;
+    -webkit-text-size-adjust: auto;
+}
+
+/*style Div da tela de cadastro*/ 
+.cadastro {
+    transition: 2.0s;
+    width: 420px;
+    height: 590px;
+    border: 2px solid #000;
+    border-radius: 80px 0px 80px 0px;
+    color: #fff;
+    background-color: rgba(0,0,5,0.8);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 52px 28px;
+}
+
+/*Titulo "Cadastro" da tela de cadastro*/
+#cadastro h1 {
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+/*Texto dentro da caixa de input da cadastro*/
+.cadastro p {
+    margin: 0;
+    padding: 3px;
+    font-weight: bold;
+}
+
+/*Tamanho das caixas Cadastro */
+.cadastro input[type="text"], input[type="password"], input[type="email"], input[type='number'], select[type="dropdown"] {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 23px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    margin-top: 5px;
+    text-align: unset;
+    font-size: 16px;
+    background-origin: border-box white;
+    color: white;
+}
+
+/*style dropdown da tela cadastrar "selecionar"*/
+.cadastro select {
+    width: 80%;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: initial;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    margin-top: 12px;
+}
+
+/*cor da caixa do dropdown mesma cor do login*/
+.cadastro option {
+    background-color: rgba(0,0,5,0.8);
+    border-radius: 80px;
+}
+
+/*style "SELECIONE..." do dropdown*/
+select:invalid {
+    color: #fff;
+}
+
+/*Tamanho da caixa do bottom "CADASTRAR"*/
+.cadastro input[type="submit"] {
+    width: 50%;
+    margin-left: 90px;
+    margin-top: 15px;
+}
+
+/*styler bottom "cadastrar" da tela de cadastro*/
+.cadastro input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 35px;
+    color: #000;
+    background: #fff;
+    border-radius: 15px;
+    transition: 0.2s;
+    font-size: 22px;
+    text-align: center;
+}
+
+/*Informativo "ir para tela de login*/
+.cadastro a {
+    margin: 5px;
+    color: #4876FF;
+}
+
+/*transisção de cor do buttom cadastrar*/
+.cadastro input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ff4d4d;
+    transition: 0.2s;
+}
+
+/*styler "já Possui Cadastro*/
+.cadastro p[class="link-cadastro"] {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4b4b4b;
+    transition: 0.2s;
+}
+
+/*styler "Cadastrar"*/
+.cadastro a:hover {
+    transition: 0.2s;
+    color: #ff4d4d;
+}
+
+/*style eye- olho de visualização de senha 1*/
+.cadastro img[id="eye-black-open-1"], img[id="eye-black-closed-1"] {
+    position: absolute;
+    top: 232px;
+    width: 18px;
+    right: 40px;
+    left: 358px;
+    cursor: pointer;
+    border: none;
+}
+
+/*style eye- olho de visualização de senha 2*/
+.cadastro img[id="eye-black-open-2"], img[id="eye-black-closed-2"] {
+    position: absolute;
+    top: 284px;
+    width: 18px;
+    right: 40px;
+    left: 358px;
+    cursor: pointer;
+    border: none;
+}
+
+/*setas de entradas numericas desativadas*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+/*----------------------------------------*/
+
+/*Reajuste da tela versão mobile*/
+body {
+    -webkit-text-size-adjust: 100%;
+}
+
+/*Tela para tablete - body */
+@media only screen and (max-width: 1024px) {
+    .body {
+        width: 85%;
+    }
+}
+
+/*Tela parar smartohone - img */
+@media only screen and (max-width: 600px) {
+    .body {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .cadastro {
+        margin: 0;
+        margin-top: 29px;
+        width: 95%;
+    }
+    .cadastro img[id="eye-black-open-1"], img[id="eye-black-closed-1"] {
+        position: absolute;
+        top: 232px;
+        width: 18px;
+        right: 40px;
+        left: 285px;
+        cursor: pointer;
+        border: none;
+    }
+    .cadastro img[id="eye-black-open-2"], img[id="eye-black-closed-2"] {
+        position: absolute;
+        top: 284px;
+        width: 18px;
+        right: 40px;
+        left: 285px;
+        cursor: pointer;
+        border: none;
+    }
+    .cadastro select {
+        width: 77%;
+    }
+    .cadastro input[type="submit"] {
+        font-size: 20px;
+        border: none;
+        outline: none;
+        position: unset;
+        margin-left: 25%;
+    }
+    .cadastro p[id="ja-possui-cadastro"] {
+        font-size: 13px;
+        text-align: start;
+    }
+}
